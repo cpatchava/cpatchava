@@ -1,0 +1,10 @@
+{
+  "name": "cpatchava",
+  "scripts": {
+  },
+  "env": {
+  },
+  "addons": [
+    "cleardb"
+  ]
+}
