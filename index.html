@@ -197,7 +197,7 @@
                             <li>
                                 <a href="https://www.linkedin.com/in/chaitanya-patchava-26318421" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
-			    <li>
+			    									<li>
                                 <a href="https://twitter.com/cpatchava" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
 
@@ -239,29 +239,18 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="">
                         <div class="modal-body">
                             <h2>Cisco Systems</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/cisco.png" class="img-responsive img-centered" alt="">
-                            <p> In my time at Cisco Systems I have worked on five different ASICs. My work includes both the <a href="http://www.cisco.com/c/en/us/products/switches/nexus-3000-series-switches/models-comparison.html#~Nexus3500"> Nexus 3500 series</a> and the <a href="http://www.cisco.com/c/en/us/products/switches/nexus-9000-series-switches/models-comparison.html"> Nexus 9000 series.</a> 
-							
-							Designed a System Verilog Test bench for the Access Control Protocol block Wrote software APIs in C and C++ to integrate with RTL to compare real time data from RTL to software model    Created a regression dashboard utilizing bootstrap for display framework along with Morris JS Graphs with a LAMP setup as the backend.     Wrote the System Verilog code for the LED module in the Nexus 3500 switch series.   
-							Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+														<p> In my time at Cisco Systems I have worked on five different ASICs. My work includes both the <a href="http://www.cisco.com/c/en/us/products/switches/nexus-3000-series-switches/models-comparison.html#~Nexus3500"> Nexus 3500 series</a> and the <a href="http://www.cisco.com/c/en/us/products/switches/nexus-9000-series-switches/models-comparison.html"> Nexus 9000 series.</a>  In my time here I learned from a very high level down to the very low transister level the full and very arduous process of making a hardware unit(from the transistors that shape it, to the software that utilizes it). I try to order the projects based on how close to the hardware level it comes to the high software level. A lot of these things I worked on overlap in time that I worked on them.<br> </p>
+														<div align ="center"> <br> <b>-Block Verification-</b><br> </div> <div align = "left"> a. Owned verification on the Access Control block. I designed both a test plan and wrote code in C++, along with system Verilog to interweave the AC block to the test bench. <br>b. Wrote automation scripts to take pieces of code that could be reused (E.G top, driver, scoreboard, packet generator) and write them in a central location and regenerate most of my test bench even for each new chip <br> c. Templateized most of the code in C++ to handle decoders that would change from chip to chip so similar functionality APIs could be reused. </div> 
+														<div align ="center"> <br> <b>-Model/Design-</b><br> </div> <div align = "left"> a. Wrote code in C++ to demonstrate what the RTL was supposed to be doing <br>b.  Worked on the LED module in the nexus 3500 ASIC. System Verilog code to write the frequency with which the LED would toggle – based on the network traffic speed <br>c. Added flip flops on the block level to propagate a delay when pipeline valued were arriving too early. </div> 
+														<div align ="center"> <br> <b>-ASIC Drivers-</b><br> </div> <div align = "left"> a. Once each chip came back, I would write APIs in C++ to configure and communicate between the ASIC and the oboard linux based OS. <br>b. Work with the team working on the Operating System for the ASIC to teach them how the block level APIs work, and write requested embedded code for talking to ASIC <br> c. Would also test the board when it came back. I would set tables and policers in the chip and pass traffic through to see if it actually behaves as expected. </div> 
+														<div align ="center"> <br> <b>-Regression-</b><br> </div> <div align = "left"> a. responsible for regression on all blocks to verify that blocks were working as people reported. <br>b. Realized emails were the only way to track old regression results and progress so wrote a LAMP based backend stack to gather results of regression and automatically post latest results <br> c. Graphed data over time using Morris JS to show progress on a block by block level. <br> d. Wrote script to catch build errors and send automatic notifications to users relevant to the problem – saved the time of having to wait until all the results were tabulated. </div> 
+														<div align ="center"> <br> <b>-Synthesis-</b><br> </div> <div align = "left"> a. Worked with vendor to take RTL code and get it compiled into a gate level synthesis netlist used to run spyglass manually to check to see if the files we have match the synthesized netlist sent back from vendor<br>b. Automating the backend to see results of synthesized netlists, rather than having to run it manually every time a new netlist came in (usually weekly).<br>c. Scripted a means to check the output results of the synthesis to see if new netlists were clean – parsed output files to see if results compiled clean.<br> d. Used pattern recognition to remove ignorable warnings/push high level problems and parsers would help diagnose potential issues from previous similar errors </div>
+														<br> 
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -279,12 +268,13 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Red v Blue</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/tivo_logo.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <p>For the last year we have been seeing an influx of campaign promises and articles from various news organizations about the merits and demerits of one candidate or the other. I have noticed, especially with the whole Bernie Sanders movement and their frustration in how the media has been disproportionately bringing light to certain candidates over others that there is quite a media bias towards one candidate or the other. This is something that first came to light to me from watching The Daily Show with Jon Stewert. I am very unhappy with the fact that most news media has a bias one way or the other, a lot of times their alligences leaning towards their party affiliations. </p>
+                            <p> I wanted to make this system a little easier for people who are genuienly interested in politics and also do not want to be swayed by the news organizations they represent. In order to rectify this I started to work on an idea called Red V Blue. It's a project meant to demonstrate the bias one way or the other (democratic of republican) as you are reading the article. </p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
